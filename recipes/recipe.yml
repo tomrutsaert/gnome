@@ -25,6 +25,7 @@ modules:
       - powertop
       - btop
       - bpftop
+      - foot
 
   - from-file: docker.yml
   - from-file: virtualization.yml
@@ -62,7 +63,7 @@ modules:
         - io.missioncenter.MissionCenter
         - com.mattjakeman.ExtensionManager
 
-  type: gnome-extensions
+  - type: gnome-extensions
     install:
       - 16 # https://extensions.gnome.org/extension/16/auto-move-windows/
       - 517 # https://extensions.gnome.org/extension/517/caffeine/
